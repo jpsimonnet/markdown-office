@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jpsimonnet.github.io/markdown-office/sitemap.xml

@@ -1,0 +1,45 @@
+/* Compléments au DSFR (Markdown office) */
+.mo-content img { max-width: 100%; height: auto; }
+.mo-img--left { float: left; margin: 0 1.5rem 1rem 0; }
+.mo-img--right { float: right; margin: 0 0 1rem 1.5rem; }
+.mo-img--center { display: block; margin: 1rem auto; }
+.mo-content::after { content: ''; display: block; clear: both; }
+.mo-content > h2, .mo-content > h3 { scroll-margin-top: 1rem; }
+.mo-tasks { list-style: none; padding-left: 0; }
+.mo-content pre { background: var(--background-alt-grey); border: 1px solid var(--border-default-grey); border-radius: .25rem; padding: 1rem; overflow-x: auto; font-size: .875rem; line-height: 1.5; }
+.mo-content :not(pre) > code { background: var(--background-alt-grey); padding: .1em .3em; border-radius: .2em; font-size: .9em; }
+.mo-tasks input { margin-right: .5rem; }
+.mo-sidemenu-sections .fr-sidemenu__list { padding-left: 1rem; }
+.mo-sidemenu-sections .fr-sidemenu__link { font-size: .875rem; padding-top: .5rem; padding-bottom: .5rem; }
+.mo-summary-col { display: none; }
+@media (min-width: 78em) { .mo-summary-col { display: block; } .mo-summary { position: sticky; top: 1rem; margin-top: 1.5rem; } }
+.fr-grid-row .fr-card, .fr-grid-row .fr-tile { height: 100%; }
+.fr-card img { box-shadow: none; }
+.mo-pager { margin-top: 3rem; }
+.mo-top { display: inline-flex; margin: 1.5rem 0 0 1rem; }
+.mo-pager .fr-pagination__list { justify-content: space-between; }
+.mo-maj { margin-top: 2rem; color: var(--text-mention-grey); }
+pre.mermaid { background: none; text-align: center; }
+.mo-pre { position: relative; padding-right: 6rem !important; }
+.mo-copy { position: absolute; top: .5rem; right: .5rem; }
+.mo-diagram { margin: 2rem 0; }
+.mo-diagram__svg { text-align: center; overflow-x: auto; }
+.mo-diagram__svg svg { max-width: 100%; height: auto; }
+.mo-diagram__descr { margin-top: .75rem; font-size: .875rem; }
+.mo-diagram__descr summary { cursor: pointer; color: var(--text-action-high-blue-france); }
+.mo-results { list-style: none; padding-left: 0; }
+.mo-result { padding: 1rem 0; border-bottom: 1px solid var(--border-default-grey); }
+.mo-result h2 { margin-bottom: .25rem; }
+.mo-result mark { background: var(--background-contrast-yellow-tournesol); color: inherit; }
+.mo-slides { margin: 1.5rem 0; }
+.mo-slides__bar { display: none; align-items: center; gap: .75rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.mo-slides--js .mo-slides__bar { display: flex; }
+.mo-slides__count { margin: 0; min-width: 4rem; text-align: center; font-weight: 700; }
+.mo-slide { aspect-ratio: 16 / 9; overflow: auto; padding: 2.5rem 3.5rem; margin-bottom: 1.5rem; border: 1px solid var(--border-default-grey); border-bottom: 4px solid var(--border-plain-blue-france); background: var(--background-default-grey); }
+.mo-slides--js .mo-slide { margin-bottom: 0; }
+.mo-slide h1, .mo-slide h2 { color: var(--text-title-blue-france); }
+.mo-slides:fullscreen { background: var(--background-default-grey); padding: 1rem 2rem; display: flex; flex-direction: column; justify-content: center; }
+.mo-slides:fullscreen .mo-slide { font-size: 1.4rem; }
+figure.dsfr-chart { margin: 2rem 0; }
+figure.dsfr-chart figcaption { margin-top: .5rem; }
+figure.dsfr-chart .dsfr-chart-title { font-weight: 700; }
